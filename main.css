@@ -1,21 +1,29 @@
 .map-container{
-    width:80%;
-    height:3px;
-    background:red;
+ 
+    width:200px;
+    height:2px;
+    background:white;
     display:flex;
     justify-content:space-between;
     margin:0px auto;
+  margin-left:10px;
+   margin-top:40px;
+  font-family: consolas;
   }
   .child{
     width:10px;
     height:10px;
-    background: yellow;
+    margin-top:-5px;
     border-radius:50%;
-    margin-top:-2px;
+    border:2px solid white;
+    background:white;
+    z-index:100;
+    transition:2s ease;
+  outline-offset: 2px;
   }
   .child-place{
     position:relative;
-    top:10px;
+    top:20px;
     left:-10px;
     font-weight: 700;
 }
@@ -24,3 +32,22 @@
       width: 100vw;
       padding:20px 20px;
   }
+.pointer{
+  position:absolute;
+  background:orangered;
+  z-index:1;
+  height:2px;
+  width:0px;
+  transition:2s ease;
+  text-align:right;
+}
+.pointer p{
+  position:relative;
+  top:-40px;
+  right:0px;
+}
+.locate{
+  background:darkblue;
+  color:white;
+  height:200px;
+}
